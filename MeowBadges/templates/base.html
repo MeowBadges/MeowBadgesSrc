@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeowBadges: {% block title %}Achievements for Scratch{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='WordmarkSmall.png')}}" alt="MeowBadges" id="logo">
+        <ul>
+            {% for link in links %}
+                <li><a href="{{ url_for(link) }}">{{ link }}</a></li>
+            {% endfor %}
+        </ul>
+    </header>
+    {% block content %}
+        <p style="color: red"><i>Oops! This content could not be displayed.</i></p>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+    margin: 3em;
+}
+
+header {
+    background-color: darkgray;
+    display: flex;
+    border-radius: 1em;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    margin: 0.25em;
+}
+
+header ul li {
+    background-color: #ffb800;
+    padding: 0.25em;
+    min-width: 20em;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 0.25em;
+}
+
+header ul li:hover {
+    background-color: #ffd362;
+    cursor: pointer;
+}
+
+header ul li a {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    width: inherit;
+    display: block;
+}
+
+#logo {
+    margin: 1em;
+}
+
+blockquote {
+    margin-left: 3em;
+    font-style: italic;
+}
+
+#badge-container {
+    display: flex;
+    list-style-type: none;
+    overflow: scroll;
+}
+
+.badge {
+    text-align: center;
+    background-color: #ffb800;
+    padding: 1em;
+    margin: 0.25em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.badge img {
+    width: 6em;
+    padding: 0.25em;
+    border-radius: 1em;
+    background-color: #aaa;
+    transition: 1s background-color;
+}
+
+.badge img:hover {
+    background-color: #666;
+
+}
+
+#pfp {
+    width: 10em;
+    margin-top: 1.5em;
+    border-radius: 100%;
+}

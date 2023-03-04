@@ -1,0 +1,42 @@
+{
+    "@timestamp": 1677883031.172927,
+    "Redstone1080": [
+        "new_scratcher",
+        "scratcher",
+        "forum_newbie",
+        "forum_poster",
+        "forum_helper"
+    ],
+    "griffpatch": [
+        "new_scratcher",
+        "scratcher",
+        "forum_newbie",
+        "forum_poster",
+        "famous"
+    ],
+    "uwv": [
+        "new_scratcher",
+        "scratcher",
+        "forum_newbie",
+        "forum_poster"
+    ],
+    "PPPDUD": [
+        "new_scratcher",
+        "scratcher",
+        "forum_newbie",
+        "forum_poster",
+        "forum_helper"
+    ],
+    "Will_Wam": [
+        "new_scratcher",
+        "scratcher",
+        "forum_newbie",
+        "famous"
+    ],
+    "WazzoTV": [
+        "new_scratcher",
+        "scratcher",
+        "forum_newbie",
+        "famous"
+    ]
+}

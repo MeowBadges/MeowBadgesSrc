@@ -1,0 +1,21 @@
+{
+    "new_scratcher": "no-requirements",
+    "scratcher": {
+        "projects": 5
+    },
+    "forum_newbie": {
+        "forum_posts": 1
+    },
+    "forum_poster": {
+        "forum_posts": 50
+    },
+    "forum_helper": {
+        "forum_posts": 1000
+    },
+    "famous": {
+        "follow_count": 1000,
+        "loves_total": 10000,
+        "views_total": 25000,
+        "faves_total": 5000
+    }
+}

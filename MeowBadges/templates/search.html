@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Search</h1>
+    <p>Search for a user here.</p>
+    <p>May be slow if the server hasn't cached the user you searched.</p>
+    <form action='/users'>
+        <label for='user'>Username</label>
+        <input type='inputtype' name='user'>
+        <input type='submit' value='Search...'>
+    </form>
+{% endblock %}

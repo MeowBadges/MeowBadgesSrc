@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <img src="{{ q.pfp_src }}" alt="{{ q.username }}'s profile picture" id="pfp">
+    <h1>{{ q['username'] }}</h1>
+    {% if q['ocular'] != None %}
+        <blockquote title="This is a status displayed by ocular. You can get your own at ocular.jeffalo.net">
+            {{ q['ocular'] }} <span id="ocular-color" />
+        </blockquote>
+    {% endif %}
+    <h3>About Me</h3>
+    <p>{{ q['bio']|replace("<", "&lt;")|replace(">", "&gt;")|replace('ǮǮ', '<br>')|safe}}</p>
+    <h3>What I'm Working On</h3>
+    <p>{{ q['wiwo']|replace("<", "&lt;")|replace(">", "&gt;")|replace('ǮǮ', '<br>')|safe}}</p>
+
+    <h2>Achievements</h3>
+    <ul id="badge-container">
+        {% for name in q['achievements'] %}
+            <li class="badge" title="{{ q['achiev_requirements'][name] }}">
+                <img 
+                    src="{{ url_for('static', filename=name + ".png") }}" 
+                    alt="(Image not displayed)"
+                >
+                <br>
+                {{ name | replace("_", " ") | title() }}
+                <br>
+                {{ parse_requirements(q['achiev_requirements'][name]) }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <p><a href="/attrib">Attribution for free icons used</a></p>
+{% endblock %}
